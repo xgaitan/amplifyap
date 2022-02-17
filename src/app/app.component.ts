@@ -10,7 +10,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
   styleUrls: ["./app.component.css"],
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
   title = "amplify-angular-app";
   public createForm: FormGroup; 
 
@@ -52,10 +52,6 @@ export class AppComponent implements OnInit {
         console.log("error creating restaurant...", e);
       });
   }
-}
-
-export class AppComponent implements OnInit, OnDestroy {
-  // ...
   ngOnDestroy() {
     if (this.subscription) {
       this.subscription.unsubscribe();
