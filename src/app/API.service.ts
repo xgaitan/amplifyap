@@ -9,23 +9,13 @@ export interface SubscriptionResponse<T> {
   value: GraphQLResult<T>;
 }
 
-export type CreateRestaurantInput = {
+export type CreateRestaurantInput = {  restaurant: Restaurant;
   id?: string | null;
   name: string;
   description: string;
   city: string;
 }; 
-/*
-export type CreateRestaurantInput = {
-  __typename: "Restaurant";
-  id?: string;
-  name?: string;
-  description?: string;
-  city?: string;
-  createdAt?: string;
-  updatedAt?: string;
-};
-*/
+
 export type ModelRestaurantConditionInput = {
   name?: ModelStringInput | null;
   description?: ModelStringInput | null;
