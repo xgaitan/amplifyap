@@ -15,7 +15,7 @@ export class AppComponent implements OnInit, OnDestroy {
   public createForm: FormGroup; 
 
    /* declare restaurants variable */
-   public restaurants: Array<Restaurant> = [];
+   public restaurants: Array <Restaurant> = [];
 
   constructor(private api: APIService, private fb: FormBuilder) {
     this.createForm = this.fb.group({
