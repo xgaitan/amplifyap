@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
 
 /* new form imports */
